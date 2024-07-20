@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body onload="checkCookies()">
+    <h2>Javascript HTML Events</h2>
+    <p id="demo"> </p>
+    <script>
+        function checkCookies(){
+            var text;
+            if(navigator.cookieEnabled == true){
+                text = "Cookies are enabled";
+            }else{
+                text = " Cookies are disabled";
+            }
+            document.getElementById("demo").innerHTML = text;
+        };
+    </script>
+    <!-- =================================================================== -->
+
+    <!-- onchange -->
+    <!-- <h2> Javascript HTML Events</h2>
+
+    enter your name : <input type="text" id="fname" onchange="upperCase()">
+    <p>when you leave the input field , function triggered which transforms the input text to upper case.</p>
+
+    <script>
+        function upperCase(){
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script> -->
+
+    <!-- onmouseover & onmouseout -->
+
+    <!-- <div
+      onmouseover="mOver(this)"
+      onmouseout="mOut(this)"
+      class="btn btn-success"
+      style="
+        background-color: green;
+        width: 500px;
+        height: 100px;
+        padding: 40px;
+      "
+    ></div>
+
+    <script>
+      function mOver(obj) {
+        obj.innerHTML = "Thankyou";
+      }
+      function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me";
+      }
+    </script> -->
+
+    <!-- ====================== -->
+
+    <!-- <div
+      onmouseover="mOver(this)"
+      onmouseout="mOut(this)"
+      class="btn btn-success"
+      style="
+        background-color: green;
+        width: 500px;
+        height: 100px;
+        padding: 40px;
+      "
+    ></div>
+
+    <script>
+      function mOver(obj) {
+        obj.innerHTML = "Submit";
+      }
+      function mOut(obj) {
+        obj.innerHTML = "Apply Now";
+      }
+    </script> -->
+
+    <!-- ========================================================================== -->
+
+    <!-- <div
+      onmousedown="mDown(this)"
+      onmouseup="mUp(this)"
+      style="background-color: red; width: 200px; height: 100px; padding: 40px"
+    >
+      Click Me
+    </div>
+
+    <script>
+      function mDown(obj) {
+        obj.style.backgroundColor = "blue";
+        obj.innerHTML = "Release Me";
+      }
+      function mUp(obj) {
+        obj.style.backgroundColor = "green";
+        obj.innerHTML = "Thank You";
+      }
+    </script> -->
+  </body>
+</html>

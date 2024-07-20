@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>break</title>
+  </head>
+  <body>
+    <h1><center>break</center></h1>
+
+    <script>
+      var num = "";
+      var i = 0;
+      while (i < 50) {
+        num += "<br>Current Number:" + i;
+        i++;
+        if (i == 33) {
+         break;
+        }
+      }
+      document.write(num);
+    </script>
+  </body>
+</html>

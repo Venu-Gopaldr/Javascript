@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - 4</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" name = "search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container row m-auto justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSO1SvXIUYovYpINAPGJjK9k1nG2ap3k06eg&usqp=CAU" class="card-img-top" alt="can't found">
+            <div class="card-body">
+              <h5 id="Virat" class="card-title">Virat Kohli</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary this">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBuo-LcFJgnI6p8iOpxckuydCUrQFwdFy7A&usqp=CAU" class="card-img-top" alt="can't found">
+            <div class="card-body">
+              <h5 id="ABD" class="card-title">ABD</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO53IReZfrauurUrwB4YcjrEKHvkBt58rPZQ&usqp=CAU" class="card-img-top" alt="can't found">
+            <div class="card-body">
+              <h5 id="Siraj" class="card-title">Siraj</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+      </div>
+
+    <!-- in console -->
+<!-- 
+    document.getElementById("Virat")
+    document.getElementById("ABD")
+    document.getElementById("Siraj") -->
+    
+    <!-- let ctitle = document.querySelectorAll(".card-title")
+    console.log(ctitle) -->
+
+<!--     
+    ctitle[0].style.color = "Red"
+    ctitle[1].style.color = "blue"
+    ctitle[2].style.color = "orange" -->
+
+
+<!-- 
+    document.querySelector(".this").style.color = "red"
+    document.querySelector(".this").style.background = "white"
+     -->
+<!-- 
+     let c = document.getElementsByTagName("input")
+     console.log(c);
+      -->
+
+<!-- 
+     let c = document.getElementsByTagName("img")
+     console.log(c);
+      -->
+
+<!-- 
+     let c = document.getElementsByClassName("card-body")
+     console.log(c);
+      -->
+
+<!-- document.getElementsByName("search") -->
+
+
+</body>
+</html>

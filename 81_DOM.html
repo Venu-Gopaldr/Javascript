@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - 1</title>
+</head>
+<body><div>
+        <!-- parent -->
+
+        <!-- child -->
+        <h1>DOM means document object</h1>
+        <p>sibling</p>
+    </div>
+    <p>DOM means document object</p>
+    <!-- document.head
+    document.body
+    document.title="any title" -->
+
+    <!-- in console -->
+    console.log(document.body.firstChild)
+    console.log(document.body.lastChild)
+    console.log(document.body.childNodes)
+    let arr = Array.from(document.body.childnodes)
+    console.log(arr)
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mark = prompt("enter your mark");
+        mark = parseInt(mark); 
+
+        function grade(mark){
+            if(mark>90){
+                return 0
+            }
+            else if(mark>80){
+                return 1
+            }
+            else{
+                return 2
+            }
+        }
+        
+        let a = grade();
+        switch (a) {
+            case 0:
+                alert("grade A")
+                break;
+            case 1:
+                alert("grade B")
+                break;
+        
+            default:alert("fail")
+                break;
+        }
+        
+    </script>
+</body>
+</html>
